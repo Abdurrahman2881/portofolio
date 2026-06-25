@@ -28,7 +28,7 @@ const experience: TimelineItem[] = [
   {
     period: 'Sep 2023 — jan 2025',
     role: 'Freelance Fullstack Developer',
-    company: 'Arys Dev Studio',
+    company: 'ArysDevStudio_',
     type: 'work',
     points: [
       'Berhasil merancang dan membangun aplikasi web berbasis riset/akademik untuk mahasiswa tingkat akhir sebagai pemenuhan kebutuhan sistem dalam penelitian skripsi.',
