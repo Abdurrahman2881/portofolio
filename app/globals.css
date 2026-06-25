@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Geist:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --accent: #00dbe7;
+  --accent-dim: rgba(0, 219, 231, 0.12);
+  --accent-glow: rgba(0, 219, 231, 0.06);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #080a10;
+  color: #e2e8f0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Premium dark scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #080a10;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e2130;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2a2f42;
+}
+
+/* Selection color */
+::selection {
+  background: rgba(0, 219, 231, 0.2);
+  color: #ffffff;
+}
+
+/* Autofill override for dark inputs */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px #080a10 inset !important;
+  -webkit-text-fill-color: #e2e8f0 !important;
+  caret-color: #e2e8f0;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .glow-accent {
+    box-shadow: 0 0 20px rgba(0, 219, 231, 0.15), 0 0 40px rgba(0, 219, 231, 0.05);
+  }
+
+  .border-glow {
+    border-color: rgba(0, 219, 231, 0.4);
+    box-shadow: 0 0 12px rgba(0, 219, 231, 0.1);
+  }
+}
